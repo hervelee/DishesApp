@@ -1,0 +1,41 @@
+<% @Dishes.each do |d| %>
+	<div class="container">
+		<div class="row">
+			<div class="col-4">
+				<div class="card" style="width: 18rem;">
+				  <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+				  <div class="card-body">
+				    <h5 class="card-title"><%= d.name%></h5>
+				    <h6 class="card-subtitle mb-2 text-muted"><%= d.diet %></h6>
+				    <p class="card-text"><%= d.description %></p>
+				    <a href="#" class="btn btn-primary">Go somewhere</a>
+				  </div>
+				</div>
+			</div>
+			<div class="col-4">
+				<div class="card" style="width: 18rem;">
+				  <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+				  <div class="card-body">
+				    <h5 class="card-title"><%= d.name%></h5>
+				    <h6 class="card-subtitle mb-2 text-muted"><%= d.diet %></h6>
+				    <p class="card-text"><%= d.description %></p>
+				    <a href="#" class="btn btn-primary">Go somewhere</a>
+				  </div>
+				</div>
+			</div>
+			<div class="col-4">
+				<div class="card" style="width: 18rem;">
+				  <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+				  <div class="card-body">
+				    <h5 class="card-title"><%= d.name%></h5>
+				    <h6 class="card-subtitle mb-2 text-muted"><%= d.diet %></h6>
+				    <p class="card-text"><%= d.description %></p>
+				    <a href="#" class="btn btn-primary">Go somewhere</a>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+<%end%>		
+	
+
