@@ -1,0 +1,18 @@
+<div class="container">
+	<div class="row">
+		<div class="col align-self-center">
+				<div class="card" style="width: 20rem;height: 20rem">
+				  <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+				  <div class="card-body">
+				    <h5 class="card-title"><%= @Dish.name%></h5>
+				    <h6 class="card-subtitle mb-2 text-muted">Regime: <%= @Dish.diet %></h6>
+				    <br>
+				    <p>Recette:</p>
+				    <p class="card-text"><%= @Dish.description %></p>
+				    <%= link_to 'Retour', dishes_path, class:"btn btn-primary"%>
+				    <%= link_to 'Mettre en Favori', favdishes_path(params[:id]), class:"btn success"%>
+				  </div>
+				</div>
+			</div>
+	</div>
+</div>

@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.5.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 6.0.0.beta1'
+gem 'rails', '~> 5.2.2'
 
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
@@ -36,9 +36,9 @@ gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
 gem 'popper_js', '~> 1.14.5'
 
 # Use ActiveStorage variant
-#gem "aws-sdk-s3", require: false
-#gem 'mini_magick', '~> 4.8'
-#gem 'activestorage-validator'
+gem "aws-sdk-s3", require: false
+gem 'mini_magick', '~> 4.8'
+gem 'activestorage-validator'
 
 # Generate seed
 gem 'faker'

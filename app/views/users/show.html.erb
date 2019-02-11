@@ -1,0 +1,27 @@
+
+
+
+<div class="container">
+	<div class="row">
+		<div class="col align-self-center">
+				<div class="card" style="width: 20rem;height: 20rem">
+				  <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+				  <div class="card-body">
+				    <h5 class="card-title"><%= @user.pseudo%></h5>
+				    <h6 class="card-subtitle mb-2 text-muted">Email: <%= @user.email%></h6>
+				    <br>
+				    <p>Vos plats favoris:</p>
+				    <% if @favdish == nil %>
+				    	<p>vous n'avez aucun favorit</p>
+				    <%else%> 
+				    	<% @favdish.each do |f| %>
+				    		<p class="card-text"><%= f.name %></p>
+				    	<%end%>
+				    <%end%>
+				    <%= link_to 'Retour', dishes_path, class:"btn btn-primary"%>
+				    <%= link_to 'Editer',edit_path, class:"btn success"%>
+				  </div>
+				</div>
+			</div>
+	</div>
+</div>

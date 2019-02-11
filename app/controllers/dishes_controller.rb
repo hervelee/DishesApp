@@ -1,11 +1,21 @@
 class DishesController < ApplicationController
-  
-  def index
+
+	before_action :connect?
+
+  def connect?
   	if signed_in?
-		@Dishes = Dish.all
 	else
 		redirect_to root_path 
-	end  
+	end
+  end
+  
+  def index
+		@Dishes = Dish.all
+  
+  end
+
+  def show
+  	@Dish = Dish.find(params[:id])
   end
 
 end

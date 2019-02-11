@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
-  get 'dishes/index', to: 'dishes#index', as: 'dishes'
+  get 'users/update', to: 'users#update', as: 'favdishes'
+  get 'users/edit', to:'users#edit', as:'edit'
+  resources :dishes	
+  get'/users/show', to: 'users#show', as: 'profil'	
   devise_for :users
   root 'home#index'
-  get 'home/private'
+
 end
