@@ -5,6 +5,7 @@ class UsersController < ApplicationController
    @favdish = Dish.find(params[:format])
   end
 
+  
 
 
 
