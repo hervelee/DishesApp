@@ -14,9 +14,9 @@
 				    <% if @favdish == nil %>
 				    	<p>vous n'avez aucun favorit</p>
 				    <%else%> 
-				    	<% @favdish.each do |f| %>
-				    		<p class="card-text"><%= f.name %></p>
-				    	<%end%>
+				    	
+				    		<p class="card-text"><%= @favdish.name %></p>
+				    	
 				    <%end%>
 				    <%= link_to 'Retour', dishes_path, class:"btn btn-primary"%>
 				    <%= link_to 'Editer',edit_path, class:"btn success"%>

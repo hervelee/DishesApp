@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'users/update', to: 'users#update', as: 'favdishes'
+  get 'user/fav', to: 'user#addfav' , as: 'fav'
   get 'users/edit', to:'users#edit', as:'edit'
   resources :dishes	
   get'/users/show', to: 'users#show', as: 'profil'	
