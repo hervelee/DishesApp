@@ -10,7 +10,7 @@
 				    <p>Recette:</p>
 				    <p class="card-text"><%= @Dish.description %></p>
 				    <%= link_to 'Retour', dishes_path, class:"btn btn-primary"%>
-				    <%= link_to 'Mettre en Favori', favdishes_path(params[:id]), class:"btn success"%>
+				    <%= link_to 'Mettre en Favori', profil_path(params[:id]), class:"btn success"%>
 				  </div>
 				</div>
 			</div>
